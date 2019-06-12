@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="WebGLFluidSimulation" package="com.sample.webglfluidsimulation" version="1.0.0" company="Company Name" />
+	<app main="Main" path="Export" file="WebGLFluidSimulation" />
+	
+	<window background="0x000000" />
+
+	<source path="example/src" />
+	<source path="src" />
+	
+	<haxelib name="openfl" />
+	
+	<assets path="Assets" rename="assets" />
+	<assets path="Assets/shaders" rename="shaders" />
+	
+	<template path="templates" />
+</project>

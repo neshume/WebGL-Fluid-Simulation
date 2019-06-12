@@ -1,0 +1,30 @@
+-main ApplicationMain 
+--macro openfl._internal.macros.ExtraParams.include()
+-cp /Users/peteshand/SDKs/haxe/libs/openfl/8,9,1/src
+-D openfl=8.9.1
+--macro lime._internal.macros.DefineMacro.run()
+-cp /Users/peteshand/SDKs/haxe/libs/lime/7,5,0/src
+-D lime=7.5.0
+-cp example/src
+-cp src
+-D MAC_USE_CURRENT_SDK=1
+-D tools=7.5.0
+-D auth_ps
+-D lime-canvas
+-D howlerjs
+-D no-compilation
+-D openfl-html5
+-D lime-webgl
+-D lime-dom
+-D lime-howlerjs
+-D lime-html5
+-D openfl-disable-handle-error
+-D html5
+-D web
+--remap flash:openfl
+--connect
+6002
+-js Export/html5/bin/WebGLFluidSimulation.js
+-cp Export/html5/haxe
+-D html5
+-D html

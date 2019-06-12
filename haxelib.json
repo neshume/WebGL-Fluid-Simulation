@@ -1,0 +1,14 @@
+{
+	"name": "webgl_fluid_simulation",
+	"url": "https://github.com/peteshand/delay",
+	"license": "MIT",
+	"tags": ["webgl", "fluid simulation", "fluid solver"],
+	"description": "webgl fluid simulation",
+	"version": "1.0.0",
+	"releasenote": "Initial release",
+	"contributors": [ "p.j.shand" ],
+	"classPath": "src/",
+	"dependencies": {
+		
+	}
+}
