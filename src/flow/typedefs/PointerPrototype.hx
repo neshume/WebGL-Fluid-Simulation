@@ -8,5 +8,6 @@ typedef PointerPrototype = {
 	dy:Float,
 	down:Bool,
 	moved:Bool,
-	color:FlowColor
+	color:FlowColor,
+	strength:Float
 }

@@ -99,7 +99,8 @@ class Flow {
 				dy: 0,
 				down: false,
 				moved: false,
-				color: null
+				color: null,
+				strength: 5
 			});
 		}
 
@@ -257,16 +258,20 @@ class Flow {
 		pointers[index].color = flowUtils.generateColor(hue, multiplier);
 	}
 
+	public function setStrength(index:Int = 0, strength:Float) {
+		pointers[index].strength = strength;
+	}
+
 	public function applyForce(x:Float, y:Float, index:Int = 0, dx:Null<Float> = null, dy:Null<Float> = null) {
 		var pointer:PointerPrototype = pointers[index];
 		pointer.moved = true; // pointer.down;
 		if (dx == null)
-			pointer.dx = (x - pointer.x) * 5.0;
+			pointer.dx = (x - pointer.x) * pointer.strength;
 		else
 			pointer.dx = dx;
 
 		if (dy == null)
-			pointer.dy = (y - pointer.y) * 5.0;
+			pointer.dy = (y - pointer.y) * pointer.strength;
 		else
 			pointer.dy = dy;
 
