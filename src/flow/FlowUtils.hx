@@ -1,8 +1,8 @@
 package flow;
 
 import js.html.webgl.Framebuffer;
-import js.html.Float32Array;
-import js.html.Uint16Array;
+import js.lib.Float32Array;
+import js.lib.Uint16Array;
 import js.html.webgl.GL;
 import js.html.CanvasElement;
 import flow.typedefs.Size;

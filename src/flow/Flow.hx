@@ -3,7 +3,7 @@ package flow;
 import js.Lib;
 import js.Browser;
 import js.html.Image;
-import js.html.Uint8Array;
+import js.lib.Uint8Array;
 import js.html.webgl.GL2;
 import js.html.CanvasElement;
 import flow.typedefs.FBO;
